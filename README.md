@@ -11,7 +11,7 @@ The chart above shows the top 50 tokens that appear in 2014 Reddit news headline
 ![Header](https://github.com/khtaho/Stock_Predictor/blob/master/plot1.png "Header")
 Another interesting chart is how the frequency of the top 25 tokens appeared over the year. The tokens 'chinese' and crimea' had a large spike.
 
-![Header](https://github.com/khtaho/Stock_Predictor/blob/master/grid%20search.png "Header")
+![Header](https://github.com/khtaho/Stock_Predictor/blob/master/grid%20search.jpg "Header")
 
 The data was then converted to TFIDF and we applied several regression models to 2013-2014(2 years) of data.  The above table shows that the best accuracy was at best 57%.
 
