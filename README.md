@@ -17,7 +17,7 @@ The chart above shows the frequency of the top 25 tokens appeared for the year 2
 
 ![Header](https://github.com/khtaho/Stock_Predictor/blob/master/accuracy.png "Header")
 
-The data was then converted to TFIDF and we applied several regression models to 2013-2014(2 years) of data.  The above table shows that the best accuracy was at best 57%.
+The data was then converted to TFIDF and we applied several regression models to initially a year of data to 2 years worth of data.  The above table shows that the best accuracy was at 57%.
 
 <br/>
 
