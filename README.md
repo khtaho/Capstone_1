@@ -41,9 +41,13 @@ The above table details the features that were used in the regression model.
 
 ![Header](https://github.com/khtaho/Stock_Predictor/blob/master/stock%20regression.png "Header")
 
+The training data was from 8-8-2008 to 12-31-2014 and the test data was from 1-2-2015 to 7-1-2016. Above is the predicted stock close price for the test data.  There were 4 regression methods used, Stochastic Gradient Descent, Random Forest, Support Vector and Neural Network.The Neural Network wasn't very accurate so it was not shown in the above chart. We can notice that the regressor match the actuals(blue line) to a good degree.
+
 ![Header](https://github.com/khtaho/Stock_Predictor/blob/master/5%20day%20stock%20forecast.png "Header")
+
+Zooming into the data, we look at 5 days to see how accurate the regressors are.
 
 
 ![Header](https://github.com/khtaho/Stock_Predictor/blob/master/error%20chart.png "Header")
 
-The regression model attempts to predict the future trend and closing prices of the DJIA in the future. The training data was from 8-8-2008 to 12-31-2014 and the test data was from 1-2-2015 to 7-1-2016.
+Above are various measures of the error of the regressors compared to Actuals. The Entire Forecast is comparing all the data from 2015 to 2016. On the 5 day forecast on the right the Random Forest and Support Vector offer the smallest amount of error but if we look at the entire forecast, Support Vector has the smallest error and therefore the best regressor.  The  modle is not precise but the model can predict the trend of the close price in the long term which has a usability.
