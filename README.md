@@ -46,4 +46,4 @@ The above table details the features that were used in the regression model.
 
 ![Header](https://github.com/khtaho/Stock_Predictor/blob/master/error%20chart.png "Header")
 
-The regression model attempts to predict the future trend and closing prices of the DJIA in the future.
+The regression model attempts to predict the future trend and closing prices of the DJIA in the future. The training data was from 8-8-2008 to 12-31-2014 and the test data was from 1-2-2015 to 7-1-2016.
