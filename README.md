@@ -55,3 +55,5 @@ Zooming into the data, we look at 5 days to see how accurate the regressors are.
 ![Header](https://github.com/khtaho/Stock_Predictor/blob/master/error%20chart.png "Header")
 
 Above are various measures of the error of the regressors compared to Actuals. The Entire Forecast is comparing all the data from 2015 to 2016. On the 5 day forecast on the right side of the table, the Random Forest and Support Vector offer the smallest amount of error but if we look at the entire forecast, Support Vector has the smallest error and therefore the best regressor.  The  model is not precise but the model has a great ability to predict the trend of the close price in the long term which has a usability!
+
+Click [here](https://github.com/khtaho/Stock_Predictor/blob/master/Capstone%202%20Technical%20Analysis.ipynb) to view the Python code.
