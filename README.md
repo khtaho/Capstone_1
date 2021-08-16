@@ -1,9 +1,12 @@
-## DJIA Stock Predictor
+# DJIA Stock Predictor
 ![Header](https://github.com/khtaho/Stock_Predictor/blob/master/candlestick-charts.png "Header")
 
 This model was initially a NLP problem looking at Reddit News Headlines and determining if there was any correlation between the headlines and the DJIA price movement. Let's start looking at the NLP analysis that was done.
 
+## NLP Analysis
 ![Header](https://github.com/khtaho/Stock_Predictor/blob/master/newplot(1).png "Header")
+
+
 
 The chart above shows the top 50 tokens that appear in 2014 Reddit news headlines.
 
@@ -24,12 +27,12 @@ The text data was then converted to TFIDF and we applied several regression mode
 ![Header](https://github.com/khtaho/Stock_Predictor/blob/master/grid%20search.jpg "Header")
 
 
-An attempt at fine tuning using GridSearchCV on the hyper parameters was also done.  The above table summarizes all the tuning but the highest accuracy was still only 57%.
+An attempt at fine tuning using GridSearchCV on the hyper parameters was also done.  The above table summarizes all the tuning but the highest accuracy was still only **57%**.
 <br/>
 
 With this learning we can conclude that NLP analysis is not very fruitful. It maybe useful to use different news headlines from another source than Reddit because the Reddit news headlines are global headlines and the DJIA is a conglomerate of just American companies. As we know what does not work so let's pivot over to a technical analysis to determine features that helped predict the daily closing prices. 
 
-
+## Technical Analysis
 
 ![Header](https://github.com/khtaho/Stock_Predictor/blob/master/stock%20features1a.jpg "Header")
 
@@ -50,4 +53,4 @@ Zooming into the data, we look at 5 days to see how accurate the regressors are.
 
 ![Header](https://github.com/khtaho/Stock_Predictor/blob/master/error%20chart.png "Header")
 
-Above are various measures of the error of the regressors compared to Actuals. The Entire Forecast is comparing all the data from 2015 to 2016. On the 5 day forecast on the right the Random Forest and Support Vector offer the smallest amount of error but if we look at the entire forecast, Support Vector has the smallest error and therefore the best regressor.  The  model is not precise but the model has a great ability to predict the trend of the close price in the long term which has a usability!
+Above are various measures of the error of the regressors compared to Actuals. The Entire Forecast is comparing all the data from 2015 to 2016. On the 5 day forecast on the right side of the table, the Random Forest and Support Vector offer the smallest amount of error but if we look at the entire forecast, Support Vector has the smallest error and therefore the best regressor.  The  model is not precise but the model has a great ability to predict the trend of the close price in the long term which has a usability!
