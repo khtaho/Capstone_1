@@ -1,20 +1,20 @@
 # DJIA Stock Predictor
 ![Header](https://github.com/khtaho/Stock_Predictor/blob/master/candlestick-charts.png "Header")
 
-This model was initially a NLP problem looking at Reddit News Headlines and determining if there was any correlation between the headlines and the DJIA price movement. Let's start looking at the NLP analysis that was done.
+This model was initially a NLP problem looking at Reddit News Headlines and determining if there was any correlation between the headlines and the DJIA price movement. After some learning it was discovered the NLP was not that useful. Read on to learn what happened. Let's start looking at the NLP analysis that was done.
 
 ## NLP Analysis
 ![Header](https://github.com/khtaho/Stock_Predictor/blob/master/newplot(1).png "Header")
 
 
 
-The chart above shows the top 50 tokens that appear in 2014 Reddit news headlines.
+Reddit News Headlines from 2008 to 2014 were tokenized. The chart above shows the top 50 tokens that appear in 2014 Reddit news headlines.
 
 <br/>
 
 ![Header](https://github.com/khtaho/Stock_Predictor/blob/master/plot1.png "Header")
 
-The headlines were tokenized and the chart above shows the frequency of the top 25 tokens that appeared for the year 2014. The tokens 'chinese' and crimea' had the highest frequencies.
+The above chart shows the frequency of the top 25 tokens that appeared for the year 2014. The tokens 'chinese' and crimea' had the highest frequencies.
 <br/>
 <br/>
 
@@ -39,7 +39,8 @@ With this learning we can conclude that NLP analysis is not very fruitful. It ma
 
 ![Header](https://github.com/khtaho/Stock_Predictor/blob/master/stock%20features2.png "Header")
 
-The above table details the features that were used in the regression model.<br/>
+The above table details the features that were used in the regression models.
+<br/>
 
 
 ![Header](https://github.com/khtaho/Stock_Predictor/blob/master/stock%20regression.png "Header")
@@ -48,7 +49,7 @@ The data was split with the training data being from 8-8-2008 to 12-31-2014 and 
 
 ![Header](https://github.com/khtaho/Stock_Predictor/blob/master/5%20day%20stock%20forecast.png "Header")
 
-Zooming into the data, we look at 5 days to see how accurate the regressors are.<br/>
+Zooming into the data, we look at 5 days to see how accurate the regressors are.  The regression models often lagged the actuals by a day but eventually arrived at similiar prices. <br/>
 <br/>
 
 ![Header](https://github.com/khtaho/Stock_Predictor/blob/master/error%20chart.png "Header")
